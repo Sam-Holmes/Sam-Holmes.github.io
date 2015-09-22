@@ -153,9 +153,10 @@ hr.small {
 .header {
     display: table;
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background: url(../img/bg.jpg) no-repeat left center scroll;
+    background-position: right center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
