@@ -155,7 +155,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat left center scroll;
+    background: url(../img/backgrounds/bg.jpg) no-repeat left center scroll;
     background-position: right center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -186,11 +186,26 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background: url(../img/backgrounds/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Portfolio */
