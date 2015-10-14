@@ -56,12 +56,12 @@
     </nav>
 
     <!-- Header -->
-    <header id="top" class="header">
+    <header id="top" class="header" style="background: url(../img/backgrounds/Projects/design-quest.jpg) no-repeat left center scroll;">
         <div class="text-vertical-center">
-            <h1>Sam Holmes</h1>
-            <h3>Design Quest</h3>
+            <h1>DESIGN QUEST</h1>
             <br>
-            <a href="../index.html" class="btn btn-dark btn-lg">Return</a>
+            <h3><b>Client:</b> <A href="http://www.peripherygames.com/" target="_blank" style="color:#D6D6D6">Periphery</a> <br><b>Role:</b> Development & Manangement</h3>
+            <a href="../index.html" class="btn btn-light btn-lg">Return</a>
         </div>
     </header>
 
@@ -71,49 +71,25 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
-                      <p class="lead">A small RPG system used to as a proof of concept for a PHD student, who wanted to test the value of a RPG system to teach graphic design priciples.</p>
+                      <p class="lead">
+                          This project was brought to us by a PHD student who wished to use it as a proof of concept. The game revolved around providing the player 'work experience' using and rpg like systems, to accomplish tasks in a studio setting. With most of the games content being given to us we just had to interpret the brief and build the systems into a workable prototype.
+                          <br>
+                          My primary focus was setting up the backend systems such as the leveling manager, that aided RPG functionality of the game. I also converted several Unity scripts to C# for the purpose of a more workable character controller.  
+                          <br>
+                          The project was successfully delivered to the client and was used as part of the thesis as planned. In addition to the third-person perspective and some roleplaying game mechanics, we integrated cutscenes with voice-acting into the experience as requested by the client.
+                          <br>
+                          
+                          </p>
+                          <br>
+                          <div class="video-container"><iframe src="https://player.vimeo.com/video/142374909" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                          
                 </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Game Devlopment quote?</h1>
-        </div>
-    </aside>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Work Examples</h2>
-                    <hr class="small">
-                    <div class="row">
-                                    <!-- add images for each demo-->
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <!-- CoL-->
-                                    <img class="img-portfolio img-responsive" src="../img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
+                
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
         <div class="container">
@@ -142,13 +118,13 @@
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/Holmies"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://www.twitter.com/samholmes"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="https://uk.linkedin.com/pub/sam-holmes/a0/2a2/499"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -163,10 +139,45 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script>
+   
     // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+        
+    </script>
+
+</body>
+
+</html>
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
